@@ -1,0 +1,27 @@
+* {
+  font-family: "Tilt Warp", cursive;
+}
+
+body {
+  background-color: rgb(255, 248, 240);
+}
+
+.accordion {
+  margin-left: 280px;
+  margin-right: auto;
+  margin-top: 40px;
+}
+
+.header {
+  text-align: center;
+}
+
+.section {
+  width: 100%;
+}
+
+.btn {
+  width: 900px;
+  height: 50px;
+  background-color: transparent;
+}
