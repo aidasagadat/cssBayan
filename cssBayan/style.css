@@ -3,7 +3,7 @@
 }
 
 body {
-  background-color: rgb(255, 248, 240);
+  background-color: #fff;
 
   font-weight: 900;
 }
@@ -11,9 +11,12 @@ body {
 .accordion {
   margin-left: 280px;
   margin-right: 280px;
+  cursor: pointer;
+  height: 1000px;
 }
 
 .header {
+  margin-top: 70px;
   text-align: center;
 }
 
@@ -32,13 +35,12 @@ body {
   height: 50px;
   background-color: transparent;
   border: 0;
-  color: rgb(4, 4, 138);
+  color: rgb(232, 189, 130);
   font-size: 20px;
   font-weight: 700;
-}
-
-.inactive {
-  display: none;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
 }
 
 .meme {
@@ -48,11 +50,33 @@ body {
 
 hr {
   height: 2.5px;
-  background-color: rgb(234, 234, 234);
+
+  background-color: rgb(243, 201, 162);
   border: none;
 }
 
 .icon {
   height: 10px;
   width: 10px;
+  transition: transform 0.7s ease-in-out;
+  color: rgb(232, 189, 130);
+}
+
+.section:hover .icon {
+  transform: rotate(180deg);
+}
+
+.accordion:hover .btn {
+  color: rgb(214, 106, 84);
+}
+
+.inactive {
+  transition: opacity 0.4s, display 2s;
+  opacity: 0;
+  height: 0;
+}
+
+.section:hover .inactive {
+  opacity: 1;
+  height: 400px;
 }
