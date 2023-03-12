@@ -78,5 +78,6 @@ hr {
 
 .section:hover .inactive {
   opacity: 1;
+
   height: 400px;
 }
