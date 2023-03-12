@@ -1,0 +1,92 @@
+* {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+  background-color: #fff;
+
+  font-weight: 900;
+}
+
+.accordion {
+  margin-left: 17.5rem;
+  margin-right: 17.5rem;
+  cursor: pointer;
+  height: 62.5px;
+}
+
+.header {
+  margin-top: 4.375rem;
+  margin-bottom: 3.75rem;
+  text-align: center;
+}
+
+.header h1 {
+  font-weight: 800;
+}
+
+.section {
+  width: 100%;
+  padding-bottom: 0.625rem;
+  cursor: pointer;
+}
+
+.btn {
+  width: 56.25rem;
+  height: 3.125rem;
+  background-color: transparent;
+  border: 0;
+  color: rgb(232, 189, 130);
+  font-size: 1.25rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.meme {
+  height: 18.75rem;
+  width: auto;
+}
+
+hr {
+  height: 0.156rem;
+
+  background-color: rgb(243, 201, 162);
+  border: none;
+}
+
+.icon {
+  height: 0.625rem;
+  width: 0.625rem;
+  transition: transform 0.7s ease-in-out;
+  color: rgb(232, 189, 130);
+}
+
+.section:hover .icon {
+  transform: rotate(135deg);
+}
+
+.accordion:hover .btn {
+  color: rgb(214, 106, 84);
+}
+
+.inactive {
+  transition: opacity 1s, display 2s;
+  opacity: 0;
+  display: none;
+}
+
+.section:hover .inactive {
+  opacity: 1;
+
+  display: flex;
+}
+
+.section:active .inactive {
+  display: block;
+}
+
+.activeSection .btn {
+  color: rgb(214, 106, 84);
+}
